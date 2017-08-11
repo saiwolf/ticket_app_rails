@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TicketApp</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= render 'layouts/rails_meta' %>
     <%= render 'layouts/shim' %>
   </head>
@@ -10,7 +10,7 @@
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
+      <%= render 'layouts/footer' %>
     </div>
-    <%= render 'layouts/footer' %>
   </body>
 </html>
