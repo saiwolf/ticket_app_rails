@@ -1,24 +1,25 @@
-# README
+_____  _    _ ___  ___ _   _  _   _  _  _   _  _____  _____
+/  ___|| |  | ||  \/  || \ | || | | || || \ | ||  ___||_   _|
+\ `--. | |  | || .  . ||  \| || | | || ||  \| || |__    | |  
+`--. \| |/\| || |\/| || . ` || | | || || . ` ||  __|   | |  
+/\__/ /\  /\  /| |  | || |\  || |_| || || |\  || |___   | |  
+\____/  \/  \/ \_|  |_/\_| \_/ \___/ | |\_| \_/\____/   \_/  
+                                    | |                     
+                                    |_|                     
+-------------------------------------------------------------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Just a silly little PHP Site.
 
-Things you may want to cover:
+Author: [Robert Cato <saiwolf@swmnu.net\>](mailto:saiwolf@swmnu.net)
 
-* Ruby version
+This is just me putzing around with Ruby on Rails. Some code might not be pretty, some of it might be downright horrifying, but that's the fun of learning right?
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+## Stuff used to make this site:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Cloud 9 Online IDE](https://c9.io)
+* [Ruby On Rails](http://rubyonrails.org/)
+* [Bootstrap 3.3.7](http://getbootstrap.com)
+* [Font Awesome CSS Icons](http://fontawesome.io/)
+* [jQuery v3.2.1](https://blog.jquery.com/2017/03/20/jquery-3-2-1-now-available/)
