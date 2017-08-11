@@ -18,7 +18,6 @@ This is just me putzing around with Ruby on Rails. Some code might not be pretty
 
 ## Stuff used to make this site:
 
-* [Cloud 9 Online IDE](https://c9.io)
 * [Ruby On Rails](http://rubyonrails.org/)
 * [Bootstrap 3.3.7](http://getbootstrap.com)
 * [Font Awesome CSS Icons](http://fontawesome.io/)
