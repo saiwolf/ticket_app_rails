@@ -9,7 +9,7 @@
   <% end %>
   <%= f.text_field :reqname, label: "Requestor Name:" %>
   <%= f.email_field :reqemail, label: "Requestor E-Mail:" %>
-  <%= f.select :department, [["Test"], ["Test 1"]], { label: "Choose Department:" } %>
+  <%= f.select :department, Ticket::DEPARTMENTS, { label: "Choose Department:" } %>
   <%= f.text_field :foruser, label: "For which User?", help: "Who's having the issue?" %>
   <%= f.text_area :issuedesc, label: "Describe the Issue:", help: "Please be as detailed as possible. Include error messages, if at all possible.", rows: 5 %>
   <%= f.form_group do %>
