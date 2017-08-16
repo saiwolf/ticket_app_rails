@@ -1,8 +1,23 @@
 <% provide(:title, "Index") %>
-<div class="center">
   <h1>Ticket App</h1>
 
   <h2>
-    This is the home page for the application.
+    Showing all Tickets
   </h2>
-</div>
+
+  <table>
+    <tr>
+      <th>Ticket #</th>
+      <th>Name</th>
+      <th>Date submitted</th>
+    </tr>
+
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.id %></td>
+        <td><%= ticket.reqname %></td>
+        <td><%= ticket.created_at %></td>
+        <td><%= link_to 'Show', ticket_path(ticket) %></td>
+      </tr>
+    <% end %>
+  </table>

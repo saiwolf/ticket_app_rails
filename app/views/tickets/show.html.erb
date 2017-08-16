@@ -1,0 +1,10 @@
+<% provide(:title, "Show") %>
+<div class="row">
+  <h1>Ticket: <%= @ticket.id %></h1>
+  <hr/>
+  <strong>Requestor Name:</strong>&nbsp;<%= mail_to @ticket.reqemail, @ticket.reqname %><br />
+  <strong>For User:</strong>&nbsp;<%= @ticket.foruser %><br />
+  <strong>Description of issue:</strong><%= text_area_tag 'issuedesc', @ticket.issuedesc %><br/>
+  <strong>Submitted On:</strong>&nbsp;<%= @ticket.created_at.to_formatted_s(:long_ordinal) %><br />
+  <strong>Department:</strong>&nbsp;<%= @ticket.fordepartment %><br/>
+</div>

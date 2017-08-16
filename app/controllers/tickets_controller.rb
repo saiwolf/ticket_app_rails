@@ -2,11 +2,13 @@ class TicketsController < ApplicationController
   def index
     # very simple code to grab all tickets so they can be
     # displayed in the Index view (index.html.erb)
+    @tickets = Ticket.all
   end
 
   def show
     # very simple code to grab the proper Ticket so it can be
     # displayed in the Show view (show.html.erb)
+    @ticket = Ticket.find(params[:id])
   end
 
   def new
@@ -19,6 +21,10 @@ class TicketsController < ApplicationController
     # code to create a new ticket based on the parameters that
     # were submitted with the form (and are now available in the
     # params hash)
+    @ticket = Ticket.new(ticket_params)
+
+    @ticket.save
+    redirect_to @ticket
   end
 
   def edit
@@ -38,5 +44,10 @@ class TicketsController < ApplicationController
     # very simple code to find the ticket we're referring to and
     # destroy it.  Once that's done, redirect us to somewhere fun.
   end
+
+  private
+    def ticket_params
+      params.require(:ticket).permit(:reqname, :reqemail, :fordepartment, :foruser, :issuedesc)
+    end
 
 end

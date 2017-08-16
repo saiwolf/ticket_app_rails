@@ -1,5 +1,6 @@
 class Ticket < ApplicationRecord
-  DEPARTMENTS = ['Accounting',
+  DEPARTMENTS = ['Select a Department',
+                 'Accounting',
                  'City Court',
                  'Civil Service',
                  'City Council',
